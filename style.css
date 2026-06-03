@@ -61,11 +61,30 @@ font-weight:700;
 
 .menu-toggle{
 
-.menu-toggle{
+width:58px;
+height:58px;
+
+display:flex;
+
+justify-content:center;
+align-items:center;
+
 font-size:42px;
+
 color:white;
+
 cursor:pointer;
-z-index:99999;
+
+border-radius:18px;
+
+background:
+rgba(255,255,255,0.04);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+transition:0.3s ease;
+
 }
 .menu-toggle:hover{
 
