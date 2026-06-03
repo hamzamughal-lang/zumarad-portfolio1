@@ -10,7 +10,6 @@ mobileMenu.classList.toggle("active");
 
 });
 
-
 const menuLinks =
 document.querySelectorAll(".mobile-menu a");
 
@@ -27,19 +26,18 @@ mobileMenu.classList.remove("active");
 const reveals =
 document.querySelectorAll(".reveal");
 
-function revealSections(){
+function revealSections() {
 
-reveals.forEach((element)=>{
+reveals.forEach((element) => {
 
-const windowHeight =
-window.innerHeight;
+const windowHeight = window.innerHeight;
 
 const revealTop =
 element.getBoundingClientRect().top;
 
 const revealPoint = 100;
 
-if(revealTop < windowHeight - revealPoint){
+if (revealTop < windowHeight - revealPoint) {
 
 element.classList.add("active");
 
@@ -49,22 +47,20 @@ element.classList.add("active");
 
 }
 
-window.addEventListener(
-"scroll",
-revealSections
-);
+window.addEventListener("scroll", revealSections);
 
 revealSections();
-window.addEventListener("scroll", ()=>{
 
 const navbar =
 document.querySelector(".navbar");
 
-if(window.scrollY > 50){
+window.addEventListener("scroll", () => {
+
+if (window.scrollY > 50) {
 
 navbar.classList.add("scrolled");
 
-}else{
+} else {
 
 navbar.classList.remove("scrolled");
 
