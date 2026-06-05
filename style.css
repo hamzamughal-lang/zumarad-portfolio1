@@ -543,3 +543,17 @@ transform:scale(1.08);
 left:0;
 
 }
+.portfolio-card h3{
+    margin-top:15px;
+    color:#fff;
+    font-size:22px;
+    text-align:center;
+}
+
+.portfolio-card p{
+    color:#bdbdbd;
+    margin-top:8px;
+    line-height:1.6;
+    text-align:center;
+    padding:0 15px;
+}
