@@ -220,43 +220,140 @@ Portfolio
 
 </section>
 
+
+<section class="contact-section" id="contact">
+
+    <h2 class="contact-title">Start Your Project</h2>
+
+    <form id="quoteForm"
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST">
+
+        <!-- Web3Forms Key -->
+        <input type="hidden"
+               name="access_key"
+               value="07720bef-4cb0-4f26-bf2e-c1f2bc7bf82d">
+
+<input type="hidden"
+name="redirect"
+value="https://zumarad-portfolio1-3t4f.vercel.app/thankyou.html">
+        <!-- Redirect (Optional) -->
+        <input type="hidden"
+               name="subject"
+               value="New Project Inquiry - ZUMARAD">
+
+        <input type="hidden"
+               name="from_name"
+               value="ZUMARAD Portfolio">
+
+        <!-- Name -->
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required>
+
+        <!-- Email -->
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required>
+
+        <!-- Service -->
+        <select
+            name="service"
+            id="service"
+            required>
+
+            <option value="">
+                Select Service
+            </option>
+
+            <option value="Video Editing">
+                Video Editing
+            </option>
+
+            <option value="Thumbnail Design">
+                Thumbnail Design
+            </option>
+
+            <option value="AI Content">
+                AI Content
+            </option>
+
+            <option value="Web Development">
+                Web Development
+            </option>
+
+        </select>
+
+        <!-- Project Details -->
+        <textarea
+            name="message"
+            id="project"
+            rows="6"
+            placeholder="Tell me about your project"
+            required></textarea>
+
+        <!-- Submit -->
+        <button
+            type="submit"
+            class="quote-btn">
+            Get Free Quote
+        </button>
+
+    </form>
+
+    <div class="trust-points">
+        <p>✓ Response within 24 Hours</p>
+        <p>✓ Free Consultation</p>
+        <p>✓ No Upfront Commitment</p>
+    </div>
+
+</section>
+
+
 <section class="why-work">
     <h2 class="section-title">Why Work With Me</h2>
 
     <div class="stats-grid">
 
         <div class="stat-card">
-            <h3>🎬</h3>
+            <h3></h3>
             <span>Professional Editing</span>
             <p>Cinematic videos with storytelling, sound design and smooth pacing.</p>
         </div>
 
         <div class="stat-card">
-            <h3>⚡</h3>
+            <h3></h3>
             <span>Fast Delivery</span>
             <p>Quick communication and on-time project completion.</p>
         </div>
 
         <div class="stat-card">
-            <h3>📱</h3>
+            <h3></h3>
             <span>Mobile First</span>
             <p>Content optimized for YouTube Shorts, Reels and TikTok.</p>
         </div>
 
         <div class="stat-card">
-            <h3>🎯</h3>
+            <h3></h3>
             <span>High CTR Focus</span>
             <p>Thumbnails and visuals designed to maximize clicks.</p>
         </div>
 
         <div class="stat-card">
-            <h3>🤖</h3>
+            <h3></h3>
             <span>AI Powered</span>
             <p>Modern AI tools for faster content creation and workflow.</p>
         </div>
 
         <div class="stat-card">
-            <h3>💻</h3>
+            <h3></h3>
             <span>Modern Websites</span>
             <p>Responsive portfolio, creator and business websites.</p>
         </div>
@@ -264,26 +361,7 @@ Portfolio
     </div>
 </section>
 
-<section class="testimonials">
 
-<h2 class="section-title">
-Client Reviews
-</h2>
-
-<div class="testimonial-card">
-
-<p class="testimonial-text">
-Absolutely insane editing quality
-My engagement doubled
-</p>
-
-<h4 class="testimonial-name">
- Ahmed Studio
-</h4>
-
-</div>
-
-</section>
 
 <!-- CONTACT -->
 
@@ -344,15 +422,13 @@ Facebook
 
 
 <footer class="footer">
-   <p>© 2026 ZUMARAD stouio</p>
-   <p> Helping creators grow with cinematic editing, thumbnails, AI content & web development.</p>
+   <p> Helping creators grow with cinematic editing
+thumbnails AI content & web development</p>
+   <p> © 2026 ZUMARAD Studio
+All Rights Reserved</p>
 </footer>
 
 <script src="Script.js"></script>
 
-</body>
-<div id="lightbox" class="lightbox" onclick="closeImage()">
-    <img id="lightbox-img">
-</div>
 
 </html>
