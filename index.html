@@ -1,63 +1,434 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thank You - ZUMARAD</title>
 
-<style>
-body{
-background:#0b0000;
-color:white;
-font-family:Arial,sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-text-align:center;
-margin:0;
-}
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-.box{
-max-width:400px;
-padding:30px;
-}
+<title>ZUMARAD</title>
 
-h1{
-font-size:32px;
-margin-bottom:15px;
-}
+<link rel="stylesheet"
+href="style.css">
 
-p{
-color:#ccc;
-margin-bottom:25px;
-}
-
-a{
-display:inline-block;
-padding:14px 30px;
-background:red;
-color:white;
-text-decoration:none;
-border-radius:50px;
-font-weight:bold;
-}
-</style>
 </head>
 
 <body>
 
-<div class="box">
-<h1>✅ Inquiry Sent!</h1>
+<!-- NAVBAR -->
+<nav class="navbar">
 
-<p>
-Thank you for contacting ZUMARAD.
-I will review your project and get back to you within 24 hours.
-</p>
+<div class="logo">
+ZUMARAD
+</div>
 
-<a href="index.html">Back To Website</a>
+<div class="nav-right">
+
+<a href="#" class="nav-btn">
+Hire Me
+</a>
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
 
 </div>
+
+<div class="mobile-menu" id="mobile-menu">
+
+<a href="#home">Home</a>
+
+<a href="#services">Services</a>
+
+<a href="#portfolio">Portfolio</a>
+
+<a href="#contact">Contact</a>
+
+</div>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<p class="hero-badge">
+VIDEO EDITOR • DESIGNER • DEVELOPER
+</p>
+
+<h1 class="hero-title">
+
+Creative Solutions
+<br>
+For Modern Creators
+</h1>
+
+<p class="hero-text">
+
+Video Editing, Thumbnail Design, AI Content
+and Web Development crafted to help creators
+grow faster and stand out online
+</p>
+
+<div class="hero-buttons">
+
+<a href="https://wa.me/923278518193"
+class="primary-btn">
+
+Hire Me Now
+
+</a>
+
+<a href="#portfolio"
+class="secondary-btn">
+
+View My Work
+
+</a>
+
+<div class="hero-stats">
+
+<div>
+<h3>4+</h3>
+<p>Services</p>
+</div>
+
+<div>
+<h3>24h</h3>
+<p>Response</p>
+</div>
+
+<div>
+<h3>100%</h3>
+<p>Mobile Ready</p>
+</div>
+
+</div>
+<div class="hero-tags">
+<span>Video Editing</span>
+<span>Thumbnail Design</span>
+<span>AI Content</span>
+<span>Web Development</span>
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h2 class="section-title">
+Services
+</h2>
+
+<div class="services-grid">
+
+<div class="service-card">
+
+<h3>🎬Video Editing</h3>
+<p>High-retention YouTube videos, Shorts, Reels, cinematic storytelling, smooth transitions, subtitles and professional pacing.</p>
+
+</div>
+
+<div class="service-card">
+
+<h3>🤖 AI Content Creation</h3>
+<p>AI-powered content systems, faceless channel assets, visual storytelling, content workflows and creative automation.</p>
+
+
+</div>
+
+<div class="service-card">
+
+<h3>🎨 Thumbnail Design</h3>
+<p>High CTR thumbnails for YouTube, AI content, documentaries and personal brands designed to increase clicks and engagement.</p>
+
+</div>
+<div class="service-card">
+
+<h3>💻 Web Development</h3>
+<p>Modern portfolio websites, creator brands, business landing pages and responsive web experiences with premium UI.</p>
+
+</div>
+
+</section>
+
+<!-- PORTFOLIO -->
+
+<section class="portfolio" id="portfolio">
+
+<h2 class="section-title">
+Portfolio
+</h2>
+
+<div class="portfolio-grid">
+
+
+<div class="portfolio-card">
+
+
+<img src="video editing.jpg" alt="Video Editing">
+</a>
+
+<h3>🎬 Video Editing</h3>
+
+<p>Cinematic Islamic documentary editing with storytelling and sound design.</p>
+
+</div>
+
+<div class="portfolio-card">
+
+
+<img src="Thumbnail Design.jpg" alt="Thumbnail Design">
+</a>
+
+<h3>🎨 Thumbnail Design</h3>
+
+<p>Netflix-style thumbnail designed for high CTR and engagement.</p>
+
+</div>
+
+<div class="portfolio-card">
+
+
+<img src="AI Content.jpg" alt="AI Content">
+</a>
+
+<h3>🤖 AI Content</h3>
+
+<p>AI content branding and visual content creation.</p>
+
+</div>
+
+<div class="portfolio-card">
+
+
+<img src="Web Development.jpg" alt="Web Development">
+</a>
+
+<h3>💻 Web Development</h3>
+
+<p>Premium creator portfolio websites and landing pages.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="contact-section" id="contact">
+
+    <h2 class="contact-title">Start Your Project</h2>
+
+    <form id="quoteForm"
+          class="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST">
+
+        <!-- Web3Forms Key -->
+        <input type="hidden"
+               name="access_key"
+               value="07720bef-4cb0-4f26-bf2e-c1f2bc7bf82d">
+
+            <input type="hidden"
+         name="redirect"
+       value="https://zumarad-portfolio1-3t4f.vercel.app/thankyou.html">
+        <!-- Redirect (Optional) -->
+        <input type="hidden"
+               name="subject"
+               value="New Project Inquiry - ZUMARAD">
+
+        <input type="hidden"
+               name="from_name"
+               value="ZUMARAD Portfolio">
+
+        <!-- Name -->
+        <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required>
+
+        <!-- Email -->
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your Email"
+            required>
+
+        <!-- Service -->
+        <select
+            name="service"
+            id="service"
+            required>
+
+            <option value="">
+                Select Service
+            </option>
+
+            <option value="Video Editing">
+                Video Editing
+            </option>
+
+            <option value="Thumbnail Design">
+                Thumbnail Design
+            </option>
+
+            <option value="AI Content">
+                AI Content
+            </option>
+
+            <option value="Web Development">
+                Web Development
+            </option>
+
+        </select>
+
+        <!-- Project Details -->
+        <textarea
+            name="message"
+            id="project"
+            rows="6"
+            placeholder="Tell me about your project"
+            required></textarea>
+
+        <!-- Submit -->
+        <button
+            type="submit"
+            class="quote-btn">
+            Get Free Quote
+        </button>
+
+    </form>
+
+    <div class="trust-points">
+        <p>✓ Response within 24 Hours</p>
+        <p>✓ Free Consultation</p>
+        <p>✓ No Upfront Commitment</p>
+    </div>
+
+</section>
+
+
+<section class="why-work">
+    <h2 class="section-title">Why Work With Me</h2>
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>Professional Editing</span>
+            <p>Cinematic videos with storytelling, sound design and smooth pacing.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>Fast Delivery</span>
+            <p>Quick communication and on-time project completion.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>Mobile First</span>
+            <p>Content optimized for YouTube Shorts, Reels and TikTok.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>High CTR Focus</span>
+            <p>Thumbnails and visuals designed to maximize clicks.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>AI Powered</span>
+            <p>Modern AI tools for faster content creation and workflow.</p>
+        </div>
+
+        <div class="stat-card">
+            <h3></h3>
+            <span>Modern Websites</span>
+            <p>Responsive portfolio, creator and business websites.</p>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section class="cta" id="contact">
+
+<h2 class="section-title">
+Let's Work Together
+</h2>
+
+<p class="cta-text">
+Need professional video editing,
+thumbnail design,
+AI content creation or web development?
+Let's build something amazing together.
+</p>
+
+<a href="https://wa.me/923278518193"
+class="primary-btn">
+Hire Me On WhatsApp
+</a>
+
+<div class="contact-links">
+
+<a href="mailto:hamzamughal964312@gmail.com"
+class="secondary-btn">
+📧 Email Me
+</a>
+
+</div>
+
+</section>
+<!-- SOCIAL FOOTER -->
+
+<section class="social-footer">
+
+<h2 class="social-title">
+Connect With Me
+</h2>
+
+<div class="social-links">
+
+
+<a href="https://youtube.com/@deendecoded2?si=n17ipwwwQvlnIYjU" target="_blank">
+YouTube
+</a>
+
+<a href="https://www.instagram.com/deendecidedofficial" target="_blank">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/share/1BYzfkEDLq/" target="_blank">
+Facebook
+</a>
+
+</div>
+
+</section>
+
+
+<footer class="footer">
+   <p> Helping creators grow with cinematic editing
+thumbnails AI content & web development</p>
+   <p> © 2026 ZUMARAD Studio
+All Rights Reserved</p>
+</footer>
+
+<script src="Script.js"></script>
 
 </body>
 </html>
